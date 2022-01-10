@@ -4,21 +4,34 @@
 
 // Este tipo de importaciones se estilan colocar al inicio
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Menu from './componentes/Menu/Menu';
+import Home from './componentes/Home/Home';
+import Nosotros from './componentes/Nosotros/Nosotros';
+import Servicios from './componentes/Servicios/Servicios';
+import Contacto from './componentes/Contacto/Contacto';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Router>
+    <div>
+      <Switch>
+
+          {/* Páginas */}
+          <Route exact path='/' component={Home} />
+          <Route path='/nosotros' component={Nosotros} />
+          <Route path='/servicios' component={Servicios} /> 
+          <Route path='/contacto' component={Contacto} /> 
+
+        </Switch>
+    </div>
+  </Router>,
+document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
