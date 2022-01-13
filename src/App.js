@@ -1,7 +1,9 @@
 import './App.css'
 import { Fragment } from 'react'
-import { ItemListContainer } from './components/navegacion/ItemListContainer'
-import Navbar from './components/navegacion/Navbar'
+import Menu from './components/Menu/Menu'
+import { Nosotros } from './components/Menu/Nosotros'
+import Servicios from './components/Menu/Servicios'
+import { ItemDetailContainer } from './components/Menu/ItemDetailContainer'
 
 
 // Primer problema: fragment comienza con minuscula
@@ -13,9 +15,13 @@ import Navbar from './components/navegacion/Navbar'
 function App() {
   return (
     <Fragment>
-      <Navbar />
-      <ItemListContainer />
+      <Menu />
+      <Nosotros />
+      <Servicios />
+      <ItemDetailContainer />
     </Fragment>
+
+   
   );
 }
 

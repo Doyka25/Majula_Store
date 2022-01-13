@@ -7,21 +7,20 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import App from './App';
-import Menu from './componentes/Menu/Menu';
-import Home from './componentes/Home/Home';
-import Nosotros from './componentes/Nosotros/Nosotros';
-import Servicios from './componentes/Servicios/Servicios';
-import Contacto from './componentes/Contacto/Contacto';
+import Home from './components/Home/Home';
+import Menu from './components/Menu/Menu'
+import Nosotros from './components/Nosotros/Nosotros';
+import Servicios from './components/Servicios/Servicios';
+import Contacto from './components/Contacto/Contacto';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import './node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
 ReactDOM.render(
   <Router>
     <div>
       <Switch>
-
+      <Menu />
           {/* Páginas */}
           <Route exact path='/' component={Home} />
           <Route path='/nosotros' component={Nosotros} />

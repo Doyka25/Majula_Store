@@ -1,9 +1,12 @@
 import React from 'react';
  
-import Menu from '../menu/Menu';
- 
-import Footer from '../footer/Footer';
- 
+import Menu from '../Menu/Menu';
+import Card from "react-bootstrap";
+import Jumbotron from "react-bootstrap";
+import Button from "react-bootstrap";
+import Container from "react-bootstrap";
+import Footer from '../Footer/Footer';
+
  
 class Servicios extends React.Component {
  
@@ -19,9 +22,9 @@ class Servicios extends React.Component {
  
 				<section className="text-center">
 				    <div className="container">
-				      <h1 className="jumbotron-heading">Servicios </h1>
+				      <h1 className="jumbotron-heading">Productos </h1>
 				      <p className="lead text-muted">
-				      	A continuación los servicios
+				      	Lo bueno, bonito y barato del e-commerce
 				      </p>				      
 				    </div>
 				</section>
@@ -32,12 +35,18 @@ class Servicios extends React.Component {
 				      <div className="row">
 				        <div className="col-md-4">
 				          <div className="card mb-4 shadow-sm">
-				            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Servicio 1"><title>Servicio 1</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Servicio 1</text></svg>
+				            <img src="imagenes/foto1.PNG" class="card-img-top" alt="chompaBlanca"><text x="50%" y="50%" fill="#eceeef" dy=".3em">Chompa Mujer</text></img>
 				            <div className="card-body">
-				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<h5 class="card-title">Chompa de lana Blanco S/.80.00 </h5>
+       						 <p class="card-text">
+									<li>Sku: NO.ZR142</li>
+									<li>Descripción: Chompa de lana color blanco.</li>
+									<li>Stock: 5</li>
+									<li>Precio: S/80.00</li>
+				              </p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -52,7 +61,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -67,7 +76,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -83,7 +92,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -98,7 +107,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -113,7 +122,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -129,7 +138,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -144,7 +153,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                
@@ -159,7 +168,7 @@ class Servicios extends React.Component {
 				              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				              <div className="d-flex justify-content-between align-items-center">
 				                <div className="btn-group">
-				                  <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+				                  <button type="button" className="btn btn-sm btn-outline-secondary">Lo Quiero</button>
 				                  
 				                </div>
 				                

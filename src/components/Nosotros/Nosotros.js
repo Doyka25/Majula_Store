@@ -1,8 +1,8 @@
 import React from 'react';
- import Menu from '../menu/Menu';
-import Jumbo from './jumbotron/Jumbo'; 
-import Detalles from './detalles/Detalles'; 
-import Footer from '../footer/Footer';
+ import Menu from '../Menu/Menu';
+import Jumbo from './Jumbo/Jumbo'; 
+import Detalles from './Detalles/Detalles'; 
+import Footer from '../Footer/Footer';
  
  
 

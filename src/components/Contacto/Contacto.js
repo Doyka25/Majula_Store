@@ -1,9 +1,10 @@
 import React from 'react';
  
-import Menu from '../menu/Menu';
-import Formulario from './formulario/Formulario'; <span> </span>
-import Mapa from './mapa/Mapa'; <span> </span>
-import Footer from '../footer/Footer';
+import Menu from '../Menu/Menu';
+import Formulario from './Formulario/Formulario';
+import Mapa from './Mapa/Mapa';
+import Footer from '../Footer/Footer';
+import Container from 'react-bootstrap';
  
  
 class Contacto extends React.Component {
