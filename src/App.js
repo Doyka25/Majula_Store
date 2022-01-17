@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import Menu from './components/Menu/Menu'
 import { Nosotros } from './components/Menu/Nosotros'
 import Servicios from './components/Menu/Servicios'
-import { ItemDetailContainer } from './components/Menu/ItemDetailContainer'
+
 
 
 // Primer problema: fragment comienza con minuscula
@@ -18,7 +18,6 @@ function App() {
       <Menu />
       <Nosotros />
       <Servicios />
-      <ItemDetailContainer />
     </Fragment>
 
    

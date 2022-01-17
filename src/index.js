@@ -4,16 +4,16 @@
 
 // Este tipo de importaciones se estilan colocar al inicio
 import './index.css';
+import './App.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Menu from './components/Menu/Menu'
+import Menu from './components/Menu/Menu';
 import Nosotros from './components/Nosotros/Nosotros';
 import Servicios from './components/Servicios/Servicios';
 import Contacto from './components/Contacto/Contacto';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './node_modules/bootstrap/dist/js/bootstrap.min.js';
+
 
 
 ReactDOM.render(

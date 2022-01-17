@@ -1,10 +1,8 @@
 import React from 'react';
- import Menu from '../Menu/Menu';
-import Slider from '../Slider/Slider';
-import Servicios from './Servicios/Servicios';
+import Menu from './components/Menu/Menu';
+import Slider from './components/Home/Slider';
 import Footer from '../Footer/Footer';
-import  Container from "react-bootstrap";
-import Carrousel from "react-bootstrap";
+
  
 class Home extends React.Component {
  

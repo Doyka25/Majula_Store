@@ -1,10 +1,6 @@
 import React from 'react';
  
 import Menu from '../Menu/Menu';
-import Card from "react-bootstrap";
-import Jumbotron from "react-bootstrap";
-import Button from "react-bootstrap";
-import Container from "react-bootstrap";
 import Footer from '../Footer/Footer';
 
  
