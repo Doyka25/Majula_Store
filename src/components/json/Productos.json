@@ -1,0 +1,44 @@
+[{
+    "id":1,
+    "branch": "Genérico",
+    "title": "Zapatillas Urbanas Mujer",
+    "description1":"Trabajado en cuero sintético. Disponible en talla 36",
+    "description2":"Horma mediana. Uso: Toda temporada",
+    "price":"S/.114.90",
+    "pictureUrl": "/imagenes/cal1.png",
+    "stock":5,
+    "category":"Calzado"
+},{
+    "id":2,
+    "branch": "Genérico",
+    "title": "Zapatillas Urbanas Mujer",
+    "description1":"Trabajado en cuero sintético.Disponible en talla 37",
+    "description2":"Horma mediana. Uso: Toda temporada",
+    "price":"S/.114.90",
+    "pictureUrl": "/imagenes/cal2.png",
+    "stock":10,
+    "category":"Calzado"
+},{
+    "id":3,
+    "branch": "Genérico",
+    "title": "Zapatillas Urbanas Mujer",
+    "description1":"Trabajado en cuero sintético.Disponible en talla 38",
+    "description2":"Horma mediana. Uso: Toda temporada",
+    "price":"S/.114.90",
+    "pictureUrl": "/imagenes/cal3.png",
+    "stock":25,
+    "category":"Calzado"
+},{
+    "id":4,
+    "branch": "Genérico",
+    "title": "Zapatillas Urbanas Mujer",
+    "description1":"Modelo021032",
+    "description2":"Disponible en talla 39",
+    "price":"S/.94.00",
+    "pictureUrl": "/imagenes/cal4.png",
+    "stock":20,
+    "category":"Calzado"
+}
+
+
+]

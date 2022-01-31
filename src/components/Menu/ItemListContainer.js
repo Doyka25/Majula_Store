@@ -1,39 +1,32 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import { ItemList} from './ItemList'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import ItemList from './ItemList';
+import Productos from "../../json/Productos.json";
 
-const myPromise = new Promise (
-    (resolve => {
-        setTimeout(() => {
-          const products = [{
-            sku: 'sku0001',
-            nombre: 'Collar Corazón',
-            description: 'Hecho en acero quirúrgico',
-            stock: 10,
-            precio: s/.43,
-          },{
-            sku: 'sku0002',
-            nombre: 'Aretes largos Party',
-            description: 'Hecho en acero quirúrgico',
-            stock: 5,
-            precio: s/.25,
-          }]
-          
-          resolve(products)
-        }, 3000)
-     })
-)
-async function main() {
-    const products = await myPromise
-    console.log(products)
+const ItemListContainer = ( param ) => {
+  const { categoryId } = useParams()
+  const [items,setItems] = useState([])
+
+  useEffect(() => {
+    setTimeout(()=>{
+      if (categoryId){
+        const Productos_Seleccionados = Productos.filter(producto => producto.category === categoryId)
+        console.log(Productos_Seleccionados)
+        setItems (Productos_Seleccionados)
+      } else {
+        setItems(Productos);
+      }
+    }, 2000);
+
+  }, [categoryId]);
+  if (items.length === 0){
+    return <p>Cargando productos...</p>; 
+  } else {
+    return (
+      <>
+      <ItemList param ={items} />
+      </>
+    )
   }
-export function ItemListContainer () {
-    const [products, setProducts] = useState
-    useEffect (() => {
-        myPromise.then (products => {
-            setProduct (products)
-        })
-
-    },[])
-    return <ItemList products={products} />
 }
+export default ItemListContainer;

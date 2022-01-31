@@ -1,27 +1,28 @@
+import React from "react";
 import './App.css'
-import { Fragment } from 'react'
-import Menu from './components/Menu/Menu'
-import { Nosotros } from './components/Menu/Nosotros'
-import Servicios from './components/Menu/Servicios'
-
-
-
-// Primer problema: fragment comienza con minuscula
-// Solucion: renombrar fragment => Fragment, lo correcto es la primera letra en mayuscula
-
-// Segundo problema: Fragment no esta siendo importado
-// Solucion: importar => import { Fragment } from 'react' al inicio del archivo
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Fragment } from 'react';
+import Menu from './components/Menu/Menu';
+import ItemListContainer from './components/Menu/ItemListContainer';
+import ItemDetailContainer from './components/Menu/ItemDetailContainer';
 
 function App() {
   return (
+    <div className="app">
+    <BrowserRouter>
     <Fragment>
       <Menu />
-      <Nosotros />
-      <Servicios />
-    </Fragment>
-
-   
-  );
-}
-
-export default App
+ 
+  <Switch>
+    <Route exact path="/" component={ItemListContainer} />
+    <Route path="/itemDetail/:id" component={ItemDetailContainer} />
+    <Route path="category/:categoryId" component={ItemListContainer} />
+  
+  </Switch>
+  </Fragment>
+    
+    </BrowserRouter>
+    </div>)
+    ;
+  }
+export default App;
