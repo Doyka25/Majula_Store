@@ -1,7 +1,7 @@
 # Majula Store
 
 Proyecto final E-commerce de ropa y accesorios de mujer.
-
+[Link a la app](https://majula.vercel.app/) 
 
 ## Características
 
